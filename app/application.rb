@@ -8,9 +8,12 @@ class Application
     
       resp.write "#{in_hours}"
       
-    if in_hours <
+    if in_hours < 12
+      resp.write "Good Morning!"
+    else 
+      resp.write "Good Afternoon!"
  
- 
+ end 
     resp.finish
   end
  
