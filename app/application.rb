@@ -4,9 +4,9 @@ class Application
     resp = Rack::Response.new
  
     time = Time.new
-  
+    in_hours = time.strftime("%k:%M")   
     
-      resp.write "#{time}"
+      resp.write "#{in_hours}"
       
  
     resp.finish
