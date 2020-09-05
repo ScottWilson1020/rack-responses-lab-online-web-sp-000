@@ -8,6 +8,8 @@ class Application
     
       resp.write "#{in_hours}"
       
+    if in_hours <
+ 
  
     resp.finish
   end
