@@ -3,9 +3,9 @@ class Application
   def call(env)
     resp = Rack::Response.new
  
-    time = 
+    time = Time.new
     
-    if num_1==num_2 && num_2==num_3
+    if < 
       resp.write "You Win"
     else
       resp.write "You Lose"
