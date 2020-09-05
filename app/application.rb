@@ -1,19 +1,17 @@
 class Application
- 
+
   def call(env)
     resp = Rack::Response.new
- 
-    time = Time.new
-    in_hours = time.strftime("%k:%M")   
-    
-      resp.write "#{in_hours}"
-      
-    if in_hours < 12
+
+    time = Time.now.hour
+
+    if time <= 12
       resp.write "Good Morning!"
-    else 
+    else
       resp.write "Good Afternoon!"
- 
+    end
+
     resp.finish
   end
- 
+
 end
