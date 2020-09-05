@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new
  
     time = Time.new
-    hour = time.hour
+    hour = Time.hour
     
       resp.write "#{time}"
       resp.write "#{hour}"
