@@ -7,7 +7,7 @@ class Application
     hour = time.hour
     
       resp.write "#{time}"
-      resp.write ""
+      resp.write "#{hour}"
  
  
     resp.finish
