@@ -4,11 +4,10 @@ class Application
     resp = Rack::Response.new
  
     time = Time.new
-    hour = Time.hour
+  
     
       resp.write "#{time}"
-      resp.write "#{hour}"
- 
+      
  
     resp.finish
   end
